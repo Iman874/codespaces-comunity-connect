@@ -10,6 +10,7 @@ const connection = mysql.createConnection({
       // Membuat koneksi ke MySQL
       connection.connect((err) => {
         if (err) {
+
             console.error('Koneksi ke MySQL gagal: ' + err.stack);
                 return;
                   }
