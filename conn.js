@@ -9,7 +9,7 @@ const connection = mysql.createConnection({
 
       // Membuat koneksi ke MySQL
       connection.connect((err) => {
-        if (err) {
+        if (!err) {
 
             console.error('Koneksi ke MySQL gagal: ' + err.stack);
                 return;
@@ -19,7 +19,7 @@ const connection = mysql.createConnection({
 
                     // Menutup koneksi setelah selesai
                     connection.end((err) => {
-                      if (err) {
+                      if (!err) {
                           console.error('Error dalam menutup koneksi: ' + err.message);
                               return;
                                 }
