@@ -1,0 +1,11 @@
+{
+    "routes_login": [
+      {
+        "path": "./login",
+        "method": "POST",
+        "handler": "./backend/login_cek.js"
+      },
+      // Rute-rute lainnya
+    ]
+  }
+  
