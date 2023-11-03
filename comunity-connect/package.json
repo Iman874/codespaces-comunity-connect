@@ -1,21 +1,32 @@
 {
   "name": "comunity-connect",
-  "version": "1.0.0",
-  "main": "node_modules/expo/AppEntry.js",
+  "private": true,
+  "sideEffects": false,
+  "type": "module",
   "scripts": {
-    "start": "expo start",
-    "android": "expo start --android",
-    "ios": "expo start --ios",
-    "web": "expo start --web"
+    "build": "remix build",
+    "dev": "remix dev --manual",
+    "start": "remix-serve ./build/index.js",
+    "typecheck": "tsc"
   },
   "dependencies": {
-    "expo": "~49.0.15",
-    "expo-status-bar": "~1.6.0",
-    "react": "18.2.0",
-    "react-native": "0.72.6"
+    "@remix-run/css-bundle": "^2.2.0",
+    "@remix-run/node": "^2.2.0",
+    "@remix-run/react": "^2.2.0",
+    "@remix-run/serve": "^2.2.0",
+    "isbot": "^3.6.8",
+    "react": "^18.2.0",
+    "react-dom": "^18.2.0"
   },
   "devDependencies": {
-    "@babel/core": "^7.20.0"
+    "@remix-run/dev": "^2.2.0",
+    "@remix-run/eslint-config": "^2.2.0",
+    "@types/react": "^18.2.20",
+    "@types/react-dom": "^18.2.7",
+    "eslint": "^8.38.0",
+    "typescript": "^5.1.6"
   },
-  "private": true
+  "engines": {
+    "node": ">=18.0.0"
+  }
 }
