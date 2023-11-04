@@ -1,11 +1,14 @@
 import React from 'react';
-import ReactDOM from 'react-dom/client';
+import ReactDOM from 'react-dom';
 import './css/index.css';
 import LOGIN from './login';
+import REGISTRASI from './registrasi';
 
-const root = ReactDOM.createRoot(document.getElementById('root'));
-root.render(
+const root = document.getElementById('root');
+ReactDOM.render(
   <React.StrictMode>
-    <LOGIN/>
-  </React.StrictMode>
+    <div>
+      <REGISTRASI/>
+    </div>
+  </React.StrictMode>, root
 );

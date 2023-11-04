@@ -24,17 +24,37 @@ export function registrasi_cek(username, email, password){
   //import data tabel user untuk cek username
 
   //Testing menggunakan variabel lokal
-  var usernameUser = user123;
-  var emailUser = user1@username.com
-  var passwordUser = 123;
+  var array_tabel_user = ["user123", "user1@username.com"];
 
-  //cek sebuah data di dalam array
+  //membuat variabel cek array untuk username, email
+  var array_input = [username, email];
   
-
   if(cek_email(email)){
+    //cek sebuah data di dalam array
+    if(!cek_array(array_input, array_tabel_user)){
+      alert("Kamu berhasil Registrasi");
+    } else{
+      alert("Username atau Email sudah terdaftar");
+    }
+  }
+}
 
+// Fungsi untuk memeriksa apakah username atau email dalam array_input ada dalam array_tabel
+function cek_array(array_input, array_tabel) {
+  // Mengonversi semua elemen dalam array_tabel ke huruf kecil
+  const arrayTabelLowerCase = array_tabel.map.toLowerCase;
+
+  for (var item of array_input) {
+    // Mengonversi item dalam array_input ke huruf kecil
+    const lowercaseItem = item.toLowerCase();
+
+    // Memeriksa apakah item dalam huruf kecil ada dalam array_tabel yang juga dalam huruf kecil
+    if (!arrayTabelLowerCase.includes(lowercaseItem)) {
+      return false; // Mengembalikan false jika item tidak ditemukan dalam array_tabel
+    }
   }
 
+  return true; // Mengembalikan true jika semua item ditemukan dalam array_tabel
 }
 
 // function cek email

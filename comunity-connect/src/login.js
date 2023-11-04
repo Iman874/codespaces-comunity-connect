@@ -1,5 +1,6 @@
 import React, { useState } from 'react';
 import './css/login.css';
+import ReactDOM from 'react-dom';
 import { login_cek } from './function/cek.js';
 
 function Login() {
@@ -25,7 +26,7 @@ function Login() {
                 <br/>
                 <button type='submit' >Login</button>
             </form>
-            <p>Don't have an account? <a href="google.com">Sign Up</a></p>
+            <p>Don't have an account? <a href="#">Sign Up</a></p>
         </main>
     );
 }
