@@ -11,12 +11,12 @@ function Login() {
         login_cek(email, password);
     }
 
-    return (
+     (
         <main>
             <h2>Login</h2>
             <form onSubmit={btnSubmit}>
                 <label>Email:
-                    <input type="text" value={email} onChange={(e) => setEmail(e.target.value)} />
+                 return   <input type="text" value={email} onChange={(e) => setEmail(e.target.value)} />
                 </label>
                 <br />
                 <label>Password:
