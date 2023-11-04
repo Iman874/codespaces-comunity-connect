@@ -1,3 +1,96 @@
 h1 {
     background-color: antiquewhite;
 }
+
+.halaman{
+    width: 100%; 
+    height: 100%; 
+    padding-top: 214px; 
+    padding-bottom: 214px; 
+    padding-left: 99px; 
+    padding-right: 52px; 
+    background: white; 
+    justify-content: center; 
+    align-items: center; 
+    gap: 82px; 
+    display: inline-flex;
+}
+
+.photo{
+    width: 440px; 
+    height: 439.51px; 
+    position: relative;
+}
+
+.photo img{
+    
+}
+
+.logincontainer{
+    align-self: stretch;
+    padding-left: 43px;
+    padding-right: 43px;
+    padding-top: 44px;
+    padding-bottom: 44px;
+    background: #6297B7;
+    box-shadow: 0px 0px 4px rgba(0, 0, 0, 0.08);
+    border-radius: 8px;
+    overflow: hidden;
+    justify-content: flex-start;
+    align-items: stretch;
+    gap: 24px;
+    display: inline-flex;
+    flex-direction: column;
+}
+
+span{
+    color: white; 
+    font-size: 36px; 
+    font-family: Poppins; 
+    font-weight: 500; 
+    line-height: 48.78px; 
+    word-wrap: break-word;
+}
+
+.fontwlc2{
+    color: #22506C; 
+    font-size: 46px; 
+    font-family: Poppins; 
+    font-weight: 900; 
+    line-height: 62.33px; 
+    word-wrap: break-word;
+}
+
+.colomlogin{
+    width: 671px; 
+    height: 77px; 
+    position: relative;
+}
+
+.checkuser{
+    position: relative;
+}
+
+.toregister{
+    width: 259px; 
+    height: 21px;
+    display: flex;
+}
+
+.toregister span{
+    color: black; 
+    font-size: 16px; 
+    font-family: Poppins; 
+    font-weight: 400; 
+    line-height: 21.68px; 
+    word-wrap: break-word;
+}
+
+.toregisterfont2{
+    color: white;
+    font-size: 16px;
+    font-family: Poppins;
+    font-weight: 400;
+    line-height: 21.68px;
+    word-wrap: break-word;
+}
