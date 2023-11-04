@@ -8,6 +8,7 @@ const root = document.getElementById('root');
 ReactDOM.render(
   <React.StrictMode>
     <div>
+      <LOGIN/>
       <REGISTRASI/>
     </div>
   </React.StrictMode>, root
