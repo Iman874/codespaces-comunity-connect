@@ -1,6 +1,6 @@
 import React, { useState } from 'react';
 import './css/login.css';
-import { login_cek } from './function/cek_login.js';
+import { login_cek } from './function/cek.js';
 
 function Login() {
     const [email, setEmail] = useState("");
@@ -16,11 +16,11 @@ function Login() {
             <h2>Login</h2>
             <form onSubmit={btnSubmit}>
                 <label>Email:
-                    <input type="text" value={email} onChange={(e) => setEmail(e.target.value)} />
+                    <input type="text" value={email} />
                 </label>
                 <br />
                 <label>Password:
-                    <input type="password" value={password} onChange={(e) => setPassword(e.target.value)} />
+                    <input type="password" value={password} />
                 </label>
                 <br/>
                 <button type='submit' >Login</button>
